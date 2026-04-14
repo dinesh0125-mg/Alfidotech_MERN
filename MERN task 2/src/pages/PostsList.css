@@ -1,0 +1,105 @@
+.posts-list-page { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.page-subtitle {
+  margin: 0.2rem 0 0;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.88rem;
+}
+
+.search-bar-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 2.6rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+.search-input::placeholder { color: rgba(255,255,255,0.3); }
+.search-input:focus { border-color: rgba(244, 63, 94, 0.5); }
+
+.search-clear {
+  position: absolute;
+  right: 0.8rem;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.4);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.2rem;
+  transition: color 0.2s;
+}
+.search-clear:hover { color: #fff; }
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 4rem;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.95rem;
+}
+.empty-state span { font-size: 2.5rem; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.page-btn {
+  padding: 0.5rem 1.2rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.page-btn:hover:not(:disabled) { background: rgba(255,255,255,0.12); }
+.page-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.page-info { color: rgba(255,255,255,0.5); font-size: 0.88rem; }

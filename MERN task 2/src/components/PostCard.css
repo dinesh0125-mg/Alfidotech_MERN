@@ -1,0 +1,87 @@
+.post-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.4rem 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  border-color: rgba(244, 63, 94, 0.3);
+}
+
+.post-card-id {
+  font-size: 0.75rem;
+  color: #f43f5e;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.post-card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.post-card-body {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.post-card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  flex-wrap: wrap;
+}
+
+/* Shared button styles */
+.btn {
+  padding: 0.38rem 0.9rem;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.75);
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.12); color: #fff; }
+
+.btn-secondary {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+}
+.btn-secondary:hover { background: rgba(168, 85, 247, 0.25); }
+
+.btn-danger {
+  background: rgba(244, 63, 94, 0.12);
+  color: #f87171;
+}
+.btn-danger:hover { background: rgba(244, 63, 94, 0.25); }
+
+.btn-primary {
+  background: linear-gradient(135deg, #f43f5e, #a855f7);
+  color: #fff;
+}
+.btn-primary:hover { opacity: 0.87; transform: translateY(-1px); box-shadow: 0 4px 14px rgba(244,63,94,0.4); }
